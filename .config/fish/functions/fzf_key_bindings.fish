@@ -1,0 +1,1 @@
+/home/cakira/.fzf/shell/key-bindings.fish
