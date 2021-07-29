@@ -1,0 +1,24 @@
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[difftool]
+	prompt = false
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[user]
+	email = cakira@cpqd.com.br
+	name = Akira - Cleber Akira Nakandakare
+	signingkey = D826280D41B88281FCE08DA1AA70375B2301F266
+[rerere]
+	enabled = true
+	autoupdate = true
+[color "decorate"]
+	head = black yellow
+[core]
+	autocrlf = input
+[blame]
+[blame]
+	date = format:%F %R
+[commit]
+	gpgsign = false
