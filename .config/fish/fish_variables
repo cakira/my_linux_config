@@ -9,7 +9,7 @@ SETUVAR --export LANG:en\x2eUTF8
 SETUVAR --export LIBGL_ALWAYS_INDIRECT:1
 SETUVAR --export PIOROOT:/home/cakira/\x2eplatformio
 SETUVAR --export PLATFORMIO_CORE_DIR:/home/cakira/\x2eplatformio
-SETUVAR --export PLATFORMIO_PACKAGES_DIR:/home/cakira/\x2eplatformio/packagesa
+SETUVAR --export PLATFORMIO_PACKAGES_DIR:/home/cakira/\x2eplatformio/packages
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/cakira/\x2elocal/share/z/data
