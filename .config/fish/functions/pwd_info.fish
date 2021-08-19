@@ -1,6 +1,7 @@
 function pwd_info -a separator -d "Print easy-to-parse information the current working directory"
     set -l home ~
-    set -l git_root (command git rev-parse --show-toplevel ^ /dev/null)
+    set -l git_root (git rev-parse --show-toplevel 2>/dev/null)
+    set -l git_root (echo $git_root | sed 's_C:/_/mnt/c/_')
 
     command pwd -P | awk -v home="$home" -v git_root="$git_root" -v separator="$separator" '
         function base(string) {
