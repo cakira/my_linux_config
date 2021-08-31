@@ -31,8 +31,8 @@ function fish_prompt
     end
 
     if set branch_name (git_branch_name)
+        set -l git_glyph ""
         set -l git_color black green
-        set -l git_glyph ""
 
         if git_is_staged
             set git_color black yellow
@@ -48,11 +48,20 @@ function fish_prompt
             set git_color white red
         end
 
-        if git_is_detached_head
-            set git_glyph "➤"
+        for i in (seq (git_number_of_stashes))
+            set git_glyph {$git_glyph}╍╍
+        end
 
-        else if git_is_stashed
-            set git_glyph "╍╍"
+        if git_is_rebase_in_progress
+            set git_glyph {$git_glyph}‡
+        end
+
+        if git_is_detached_head
+            set git_glyph {$git_glyph}➤
+        end
+
+        if test -z $git_glyph
+            set git_glyph ""
         end
 
         set -l prompt
