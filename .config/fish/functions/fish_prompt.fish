@@ -3,7 +3,14 @@ function fish_prompt
     set -l pwd_info (pwd_info "/")
     set -l dir
     set -l base
-    set -l base_color 888 161616
+    set -l base_color
+    set -l is_tracking_time (timew summary now | grep "Start")
+
+    if test -n "$is_tracking_time"
+        set base_color 888 000040
+    else
+        set base_color 888 6d1200
+    end
 
     if test "$PWD" = ~
         set base "~"

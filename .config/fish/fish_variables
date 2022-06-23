@@ -17,6 +17,7 @@ SETUVAR Z_DATA_DIR:/home/cakira/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:/home/cakira
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_gdt:git\x20difftool\x20\x2dd
+SETUVAR _fish_abbr_tw:timew
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
