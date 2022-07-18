@@ -1,11 +1,16 @@
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[delta]
+	navigate = true  # use n and N to move between diff sections
 [diff]
-	tool = meld
-[merge]
+	algorithm = patience
+	colorMoved = default
 	tool = meld
 [difftool]
 	prompt = false
-[credential]
-	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[merge]
+	conflictstyle = diff3
+	tool = meld
 [user]
 	email = cakira@cpqd.com.br
 	name = Akira - Cleber Akira Nakandakare
@@ -17,8 +22,16 @@
 	head = black yellow
 [core]
 	autocrlf = input
-[blame]
+	# pager = less -x4
+	pager = delta
 [blame]
 	date = format:%F %R
 [commit]
 	gpgsign = false
+[submodule]
+	recurse = false
+
+[interactive]
+	diffFilter = delta --color-only
+
+

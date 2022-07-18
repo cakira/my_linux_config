@@ -15,7 +15,8 @@ SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/cakira/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/cakira/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:/home/cakira
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_co:git\x20commit
 SETUVAR _fish_abbr_gdt:git\x20difftool\x20\x2dd
 SETUVAR _fish_abbr_tw:timew
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
@@ -47,4 +48,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/cakira/bin\x1e/home/cakira/\x2eplatformio/penv/bin
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/cakira/miniconda3/bin\x1e/home/cakira/bin\x1e/home/cakira/\x2eplatformio/penv/bin

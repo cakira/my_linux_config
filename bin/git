@@ -7,8 +7,8 @@ function isWinDir {
   esac
 }
 
-if isWinDir; then
-  git.exe "$@"
-else
+# if isWinDir; then
+#  git.exe "$@"
+# else
   /usr/bin/git "$@"
-fi
+# fi
