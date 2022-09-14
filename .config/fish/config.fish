@@ -15,6 +15,5 @@ set -x WAYLAND_DISPLAY ""
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /home/cakira/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+# eval /home/cakira/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
-
