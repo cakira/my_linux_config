@@ -4,7 +4,7 @@ function fish_prompt
     set -l dir
     set -l base
     set -l base_color
-    set -l is_tracking_time (timew summary now | grep "Start")
+    set -l is_tracking_time (type -q timew && timew summary now | grep "Start")
 
     if test -n "$is_tracking_time"
         set base_color 888 000040
