@@ -17,3 +17,8 @@ set -x WAYLAND_DISPLAY ""
 # !! Contents within this block are managed by 'conda init' !!
 # eval /home/cakira/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
+
+abbr -a -- gdt 'git difftool -d' 
+abbr -a -- tw timew 
+abbr -a -- gs 'git switch' 
+abbr -a --position anywhere -- ... …
