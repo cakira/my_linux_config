@@ -18,6 +18,8 @@ set -x WAYLAND_DISPLAY ""
 # eval /home/cakira/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
+zoxide init fish | source
+
 abbr -a -- gdt 'git difftool -d' 
 abbr -a -- tw timew 
 abbr -a -- gs 'git switch' 
